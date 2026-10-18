@@ -1,0 +1,2302 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #131316;
+}
+
+
+/* HEADER */
+
+.header{
+    background-color: aqua;
+    color: white;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    padding-left: 12vw;
+    justify-content: space-between;
+    padding-right: 12vw;
+    background-color: #141414;
+    position: fixed;
+    z-index: 1;
+}
+
+.header img{
+    height: 50px;
+    width: 50px;
+}
+
+.header .logo{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.header .tabs ul{
+    display: flex;
+    column-gap: 30px;
+    list-style: none;
+    margin-right: 70px;
+}
+
+.header .button{
+    display:flex;
+    column-gap: 10px;
+}
+
+.button .timing{
+    color: #939197;
+    padding-top: 11px;
+    border-radius: 10px;
+    width: 12vw;
+    text-align: center;
+}
+
+.button .order{
+    background:linear-gradient(to right , #B35BDE , #F04979);
+    border-radius: 40px;
+    height: 40px;
+    width: 90px;
+    border: none;
+}
+
+
+/* MAIN */
+
+.main{
+    background: url('./media/BurgerImage.jpg') no-repeat center;
+    background-size: 150%;
+    height: 120vh;
+    width: 100%;
+    padding-top: 10vh;
+}
+
+.center{
+    height: 100%;
+    width: 80%;
+    margin-left: 12%;
+}
+
+.head1{
+    padding-top: 5%;
+    color: brown;
+}
+
+.head2{
+    color: #ffffff;
+    font-size: 110px;
+    padding-top: 1%;
+    line-height: 0.90;
+}
+
+.color-text{
+    background:linear-gradient(90deg,#9b6bff,#ff4f7d);
+    background-clip: text;
+    color: transparent;
+}
+
+.description-box{
+    max-width: 550px;
+    padding-top:2%;
+}
+
+.description{
+    font-size: 25px;
+    line-height: 1.6;
+    color:#a0a0a5;
+}
+
+
+/* MAIN BUTTONS */
+
+.main-buttons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.order-btn{
+    padding: 20px 35px;
+    background: linear-gradient(90deg,#9b6bff,#ff4f7d);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 18px rgba(255, 79, 125, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+.button-line{
+    width: 3px;
+    height: 35px;
+    background-color:rgb(64, 60, 60);
+}
+
+.store-btn{
+    padding: 10px 15px;
+    background-color: rgb(43, 42, 45);
+    border-radius: 15px;
+    display: flex;
+    text-decoration: none;
+    column-gap: 10px;
+}
+
+.store-btn img{
+    height: 30px;
+    width: 30px;
+    padding-top: 5px;
+}
+
+.store-btn small{
+    font-size: 12px;
+    color: #a0a0a5;
+}
+
+.store-btn span{
+    display: block;
+    color: #ffffff;
+}
+
+
+/* TIME */
+
+.time{
+    background-color: black;
+    height: 15vh;
+    width: 96%;
+    margin-top: 6%;
+    display: flex;
+}
+
+.sec{
+    height: 100%;
+    width: 50%;
+    padding: 15px 0 15px 15px;
+    border: solid 3px #3f3e3c;
+    border-left: none;
+}
+
+.sec:nth-child(2){
+    border-right: non;
+}
+
+.sec p{
+    font-size:40px;
+    color: #ffffff;
+}
+
+.sec small{
+    color: #a0a0a5;
+}
+
+.sec span{
+    font-size:20px;
+}
+
+
+/* MARQUEE */
+
+marquee{
+    height: 13vh;
+    width: 100%;
+    background-color: #3f3e3c;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+marquee span{
+    color: #ffffff;
+}
+
+marquee span:nth-child(even){
+    color: #ff4f7d;
+}
+
+li::marker{
+    color: #F04979;
+}
+
+
+/* BUILD SECTION */
+
+.build-heading{
+    background-color:#131316;
+    width:80%;
+    height:55vh;
+    margin-left:10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.build-heading > div:first-child{
+    padding-top:10%;
+}
+
+.build-heading small{
+    font-size:22px;
+    color:#ff4f7d;
+}
+
+.build-heading > div:first-child p{
+    font-size:60px;
+    width:400px;
+    color:#ffffff;
+}
+
+.build-description{
+    padding-top:20%;
+    width:430px;
+    font-size:20px;
+}
+
+.build-description p{
+    color:#a0a0a5;
+}
+
+
+/* CARDS */
+
+.cards{
+    background-color: #131316;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:80vh;
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+    padding-top:20px;
+}
+
+.card{
+    height:56%;
+    width:18%;
+    background-color:#1a1a1f;
+    border:solid 1px black;
+    border-radius:15px;
+}
+
+.card-top{
+    padding:40px 30px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.emoji{
+    background-color:#1e1e1e;
+    height:50px;
+    width:50px;
+    border-radius:10px;
+    font-size:35px;
+    text-align:center;
+}
+
+.card-top small{
+    padding-top:20px;
+    color:#a0a0a5;
+}
+
+.card-title{
+    text-align:left;
+    padding-left:30px;
+    font-weight:bold;
+    color:#ffffff;
+    font-size:20px;
+}
+
+.card-description{
+    text-align:left;
+    padding-left:30px;
+    padding-right:10px;
+    color:#a0a0a5;
+    max-width:180px;
+}
+
+
+/* STORY */
+
+.story{
+    height:90vh;
+    width:90%;
+    margin-left:11%;
+    display:flex;
+    column-gap:80px;
+}
+
+.story-image{
+    height:90vh;
+    width:40%;
+}
+
+.story-image img{
+    border-radius:20px;
+    height:100%;
+    width:100%;
+}
+
+.story-content{
+    padding-top:40px;
+}
+
+.story-content > small{
+    font-size:15px;
+}
+
+.story-content > small span{
+    color:#ffffff;
+}
+
+.story-heading{
+    font-size:50px;
+    color:#ffffff;
+    max-width:450px;
+    font-weight:700;
+}
+
+.story-text{
+    max-width:420px;
+    font-size:20px;
+    color:#a0a0a5;
+}
+
+.story-text-2{
+    max-width:500px;
+}
+
+.story-stats{
+    margin-top:40px;
+    display:flex;
+    column-gap:50px;
+}
+
+.story-stats p{
+    font-size:50px;
+    color:#ffffff;
+}
+
+.story-stats small{
+    font-size:12px;
+    color:#a0a0a5;
+}
+
+.story-stats div:nth-child(2) small{
+    color:#a0a0a5;
+}
+
+.story-button{
+    margin-top:60px;
+}
+
+.story-button a{
+    text-decoration:none;
+    padding:18px 40px;
+    border-radius:30px;
+    border:solid 2px #a0a0a5;
+    color:#ffffff;
+}
+
+
+/* ENJOY */
+
+.enjoy{
+    background: url('./media/ChickenBurgerImage.jpg') no-repeat center;
+    width:100%;
+    height:80vh;
+    margin-top:25vh;
+    text-align:center;
+    padding-top:100px;
+}
+
+.enjoy small{
+    color:#ffffff;
+}
+
+.enjoy > p{
+    color:#ffffff;
+    font-size:120px;
+    margin-top:30px;
+}
+
+.enjoy > p:nth-child(3){
+    background:linear-gradient(90deg,#9b6bff,#ff4f7d);
+    background-clip:text;
+    color:transparent;
+    font-size:120px;
+}
+
+.enjoy-description{
+    color:#ffffff !important;
+    max-width:620px;
+    margin-left:30vw;
+    font-size:25px !important;
+}
+
+
+/* HOW IT WORKS */
+
+.how-it-works {
+    margin-left: 12%;
+    width: 75%;
+    min-height: 200vh;
+    display: flex;
+}
+
+.how-it-works .left {
+    width: 50%;
+    height: 100vh;
+    padding-top: 15%;
+    position: sticky;
+    top: 10vh;
+}
+
+.left > small{
+    color:#ff4f7d;
+    font-size:15px;
+}
+
+.how-heading{
+    font-size:70px;
+    max-width:450px;
+    color:#ffffff;
+}
+
+.how-description{
+    color:#a0a0a5;
+    max-width:480px;
+    font-size:20px;
+}
+
+.how-it-works .right {
+    width: 50%;
+    min-height: 200vh;
+    display: flex;
+    column-gap: 30px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.steps{
+    height:80vh;
+    margin-top:20vh;
+    flex-shrink:0;
+}
+
+.how-it-works .right > div:first-child {
+    position: relative;
+}
+
+.pink-line {
+    position: absolute;
+    width: 5px;
+    height: 70vh;
+    background-color: #ff4f7d;
+    left: 28px;
+    top: 60px;
+}
+
+.step {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(90deg,#9b6bff,#ff4f7d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.step-2{
+    margin-top:30vh;
+}
+
+.step-3{
+    margin-top:30vh;
+}
+
+.steps-content{
+    margin-top:20vh;
+    padding-top:8px;
+}
+
+.steps-content small{
+    color:#ff4f7d;
+}
+
+.steps-content p{
+    color:#a0a0a5;
+    max-width:400px;
+}
+
+.steps-content > div p:first-of-type{
+    font-size:40px;
+    color:#ffffff;
+}
+
+.cook{
+    margin-top:18vh;
+}
+
+.deliver{
+    margin-top:18vh;
+}
+
+
+/* APP */
+
+.app-section{
+    height:100vh;
+    width:75%;
+    border:solid 1px;
+    border-color:#a0a0a5;
+    margin-left:12%;
+    display:flex;
+    background-color:#1a1a1e;
+    border-radius:25px;
+}
+
+.app-content{
+    width:50%;
+    height:100%;
+    padding-top:20vh;
+    padding-left:8%;
+}
+
+.app-content > small{
+    font-size:20px;
+    color:#ff4f7d;
+}
+
+.app-heading{
+    color:#ffffff;
+    max-width:350px;
+    font-size:50px;
+}
+
+.app-description{
+    color:#a0a0a5;
+    max-width:390px;
+    font-size:18px;
+}
+
+.app-content ul{
+    list-style-type:none;
+    padding-left:20px;
+    color:#a0a0a5;
+    font-size:18px;
+}
+
+.stepss > li::before{
+    content: "✔️ ";
+}
+
+.app-store-buttons{
+    display:flex;
+    column-gap:25px;
+    padding-top:20px;
+}
+
+.app-images{
+    height:100%;
+    width:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.side-interface{
+    width:17%;
+    height:20%;
+    position:absolute;
+    z-index:1;
+    margin-top:350px;
+    margin-right:200px;
+    border-radius:10px;
+    border:solid 1px #a0a0a5;
+}
+
+.mobile-app{
+    height:85%;
+    width:55%;
+    border:solid 5px #a0a0a5;
+    border-radius:20px;
+    position:relative;
+}
+
+
+/* INSTAGRAM */
+
+.instagram{
+    height:170vh;
+    width:75%;
+    margin-left:12%;
+    text-align:center;
+    padding-top:25vh;
+}
+
+.instagram-heading{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+.instagram-title small{
+    color:#ff4f7d;
+    font-size:15px;
+    margin-right:150px;
+}
+
+.instagram-title p{
+    font-size:55px;
+    color:#ffffff;
+}
+
+.instagram-heading > a{
+    text-decoration:none;
+    color:#ffffff;
+    font-size:22px;
+    margin-top:60px;
+    border:solid 1px #a0a0a5;
+    border-radius:25px;
+    padding:12px 20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.instagram-images{
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.instagram-images img{
+    height:50vh;
+    width:50vh;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+
+/* HUNGRY */
+
+.hungry-section{
+    height:70vh;
+    width:75%;
+    margin-left:12%;
+    background-color:#1a1a1e;
+    border:solid 1px #2a2a2e;
+    border-radius:20px;
+    text-align:center;
+    padding-top:15vh;
+    background:url('./media/CardImg.jpg');
+}
+
+.hungry-section > small{
+    color:#ffffff;
+    font-size:15px;
+}
+
+.hungry-heading{
+    font-size:70px;
+    color:#ffffff;
+}
+
+.hungry-gradient{
+    font-size:70px;
+    background:linear-gradient(90deg,#9b6bff,#ff4f7d);
+    background-clip:text;
+    color:transparent;
+}
+
+.hungry-description{
+    color:#ffffff;
+    font-size:18px;
+}
+
+.hungry-buttons{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.hungry-buttons a:first-child{
+    text-decoration:none;
+    padding:20px 40px;
+    background:linear-gradient(90deg,#9b6bff,#ff4f7d);
+    color:#ffffff;
+    border-radius:40px;
+    font-weight:bold;
+    display:flex;
+    align-items:center;
+}
+
+.hungry-buttons a:last-child{
+    color:#ffffff;
+    border:solid 1px #a0a0a5;
+    border-radius:30px;
+    text-decoration:none;
+    padding:20px 40px;
+}
+
+
+/* FOOTER */
+
+.footer{
+    height:50vh;
+    width:100%;
+    margin-top:15vh;
+    background-color:#0e0e10;
+    padding:80px 12%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-about{
+    width:30%;
+}
+
+.footer-about > p:first-child{
+    font-size:35px;
+    color:#ffffff;
+    font-weight:bold;
+}
+
+.footer-about > p:last-child{
+    color:#a0a0a5;
+    max-width:300px;
+    line-height:1.6;
+}
+
+.footer-title{
+    color:#ffffff;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.footer a{
+    display:block;
+    color:#a0a0a5;
+    text-decoration:none;
+    margin-bottom:15px;
+}
+
+.footer > div:last-child p:not(.footer-title){
+    color:#a0a0a5;
+    margin-bottom:15px;
+}
+
+
+/* BIG FOOTER TEXT */
+
+.footer-big-text{
+    height:25vh;
+    width:90%;
+    margin:0 5%;
+    font-size:217px;
+    display:flex;
+    align-items:center;
+}
+
+
+/* COPYRIGHT */
+
+.copyright{
+    height:10vh;
+    background-color:#0e0e10;
+    text-align:center;
+    padding-top:20px;
+}
+
+.copyright small{
+    color:#66666b;
+}
+
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+   Applies when screen width is 1024px or smaller
+   ========================================================= */
+
+@media (max-width: 1024px) {
+
+    /* ---------------------------------------------------------
+       HEADER
+       --------------------------------------------------------- */
+
+    .header {
+
+        /* ORIGINAL: padding-left: 12vw;
+           CHANGED TO: padding-left: 5vw;
+           WHY: 12vw creates too much empty space on a tablet.
+           5vw keeps the header content closer to the screen edge. */
+        padding-left: 5vw;
+
+        /* ORIGINAL: padding-right: 12vw;
+           CHANGED TO: padding-right: 5vw;
+           WHY: Same reason as left padding. */
+        padding-right: 5vw;
+    }
+
+
+    .header .tabs ul {
+
+        /* ORIGINAL: margin-right: 70px;
+           CHANGED TO: margin-right: 20px;
+           WHY: 70px takes too much horizontal space on smaller screens. */
+        margin-right: 20px;
+
+        /* ORIGINAL: column-gap: 30px;
+           CHANGED TO: column-gap: 15px;
+           WHY: Reduces the space between navigation items. */
+        column-gap: 15px;
+    }
+
+
+    .button .timing {
+
+        /* ORIGINAL: width: 12vw;
+           CHANGED TO: width: auto;
+           WHY: The timing box does not need a percentage width on a tablet.
+           Its content can decide its width. */
+        width: auto;
+    }
+
+
+    /* ---------------------------------------------------------
+       HERO / MAIN SECTION
+       --------------------------------------------------------- */
+
+    .center {
+
+        /* ORIGINAL: width: 80%;
+           CHANGED TO: width: 90%;
+           WHY: Gives the main content more usable width on tablets. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Keeps the 90% container centered.
+           5% left + 90% width + 5% right = 100%. */
+        margin-left: 5%;
+    }
+
+
+    .head2 {
+
+        /* ORIGINAL: font-size: 100px;
+           CHANGED TO: font-size: 80px;
+           WHY: A 100px heading can become too large on a tablet.
+           80px gives the heading more room. */
+        font-size: 80px;
+    }
+
+
+    .description {
+
+        /* ORIGINAL: font-size: 25px;
+           CHANGED TO: font-size: 20px;
+           WHY: Smaller text fits better on a smaller screen. */
+        font-size: 20px;
+    }
+
+
+    /* ---------------------------------------------------------
+       CARDS
+       --------------------------------------------------------- */
+
+    .cards {
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Gives the cards more horizontal space. */
+        margin-left: 5%;
+
+        /* ORIGINAL: margin-right: 12%;
+           CHANGED TO: margin-right: 5%;
+           WHY: Keeps equal spacing on both sides. */
+        margin-right: 5%;
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Cards need more available width on tablets. */
+        width: 90%;
+    }
+
+
+    .card {
+
+        /* ORIGINAL: width: 20%;
+           CHANGED TO: width: 19%;
+           WHY: Slightly reduces each card so all cards can still
+           fit in one row with their gaps. */
+        width: 19%;
+    }
+
+
+    /* ---------------------------------------------------------
+       STORY
+       --------------------------------------------------------- */
+
+    .story {
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Uses more of the tablet screen. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the wider story section. */
+        margin-left: 5%;
+    }
+
+
+    /* ---------------------------------------------------------
+       ENJOY FOOD / ENJOY LIFE
+       --------------------------------------------------------- */
+
+    .enjoy > p {
+
+        /* ORIGINAL: font-size: 100px;
+           CHANGED TO: font-size: 80px;
+           WHY: Large text needs to shrink on smaller screens. */
+        font-size: 80px;
+    }
+
+
+    .enjoy > p:nth-child(3) {
+
+        /* ORIGINAL: font-size: 100px;
+           CHANGED TO: font-size: 80px;
+           WHY: Keeps both large heading lines visually balanced. */
+        font-size: 80px;
+    }
+
+
+    .enjoy-description {
+
+        /* ORIGINAL: margin-left: 30vw;
+           CHANGED TO: margin-left: 20vw;
+           WHY: 30vw pushes the description too far right on a tablet. */
+        margin-left: 20vw;
+    }
+
+
+    /* ---------------------------------------------------------
+       HOW IT WORKS
+       --------------------------------------------------------- */
+
+    .how-it-works {
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Gives this section more available width. */
+        margin-left: 5%;
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Makes better use of tablet width. */
+        width: 90%;
+    }
+
+
+    /* ---------------------------------------------------------
+       APP SECTION
+       --------------------------------------------------------- */
+
+    .app-section {
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Gives the app section more room on tablet. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the wider section. */
+        margin-left: 5%;
+    }
+
+
+    /* ---------------------------------------------------------
+       INSTAGRAM
+       --------------------------------------------------------- */
+
+    .instagram {
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Gives the image grid more available space. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the wider section. */
+        margin-left: 5%;
+    }
+
+
+    .instagram-images img {
+
+        /* ORIGINAL: width: 30%;
+           CHANGED TO: width: 100%;
+           WHY: The image should fill its grid cell instead of
+           keeping a fixed percentage inside the cell. */
+        width: 100%;
+    }
+
+
+    /* ---------------------------------------------------------
+       HUNGRY YET
+       --------------------------------------------------------- */
+
+    .hungry-section {
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Uses more tablet screen width. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the wider section. */
+        margin-left: 5%;
+    }
+
+
+    /* ---------------------------------------------------------
+       FOOTER
+       --------------------------------------------------------- */
+
+    .footer {
+
+        /* ORIGINAL: padding: 100px 12%;
+           CHANGED TO: padding: 80px 5%;
+           WHY: Reduces horizontal space so footer content has
+           more room on a tablet. */
+        padding: 80px 5%;
+    }
+
+
+    .footer-big-text {
+
+        /* ORIGINAL: font-size: 150px;
+           CHANGED TO: font-size: 120px;
+           WHY: Very large text can overflow on tablets. */
+        font-size: 120px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+   Applies when screen width is 600px or smaller
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+
+    /* =====================================================
+       HEADER
+       ===================================================== */
+
+    .header {
+
+        /* ORIGINAL: height: 10vh;
+           CHANGED TO: height: 10vh;
+           WHY: Keeping this because 10vh already adapts
+           according to screen height. */
+        height: 10vh;
+
+        /* ORIGINAL: padding-left: 12vw;
+           CHANGED TO: padding-left: 20px;
+           WHY: On a phone, a small fixed padding is more
+           predictable than 12vw. */
+        padding-left: 20px;
+
+        /* ORIGINAL: padding-right: 12vw;
+           CHANGED TO: padding-right: 20px;
+           WHY: Keeps equal spacing on both sides. */
+        padding-right: 20px;
+    }
+
+
+    .header img {
+
+        /* ORIGINAL: width: 50px;
+           CHANGED TO: width: 40px;
+           WHY: The logo should be smaller on a phone
+           so it doesn't consume too much header space. */
+        width: 40px;
+
+        /* ORIGINAL: height: 50px;
+           CHANGED TO: height: 40px;
+           WHY: Keeps the logo square while reducing its size. */
+        height: 40px;
+    }
+
+
+    .header .logo h3 {
+
+        /* ORIGINAL: default heading size
+           CHANGED TO: font-size: 14px;
+           WHY: Smaller logo text prevents the header from
+           becoming crowded. */
+        font-size: 14px;
+    }
+
+
+    .header .tabs {
+
+        /* ORIGINAL: navigation was visible
+           CHANGED TO: display: none;
+           WHY: Desktop navigation takes too much room on a phone.
+           A mobile menu could be added later. */
+        display: none;
+    }
+
+
+    .header .button {
+
+        /* ORIGINAL: column-gap: 10px;
+           CHANGED TO: column-gap: 5px;
+           WHY: Reduces space between mobile header controls. */
+        column-gap: 5px;
+    }
+
+
+    .button .timing {
+
+        /* ORIGINAL: timing was visible
+           CHANGED TO: display: none;
+           WHY: There isn't enough room for the timing text
+           in the mobile header. */
+        display: none;
+    }
+
+
+    .button .order {
+
+        /* ORIGINAL: width: 90px;
+           CHANGED TO: width: 80px;
+           WHY: Makes the button slightly smaller on mobile. */
+        width: 80px;
+
+        /* ORIGINAL: height: 40px;
+           CHANGED TO: height: 35px;
+           WHY: Reduces button height to match the smaller header. */
+        height: 35px;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .main {
+
+        /* ORIGINAL: height: 120vh;
+           CHANGED TO: height: auto;
+           WHY: Fixed section height can cause content to
+           overflow when text wraps on mobile. */
+        height: auto;
+
+        /* NEW: min-height: 120vh;
+           WHY: Keeps the hero large enough while still allowing
+           it to grow if the content needs more space. */
+        min-height: 120vh;
+
+        /* ORIGINAL: background-size: 150%;
+           CHANGED TO: background-size: cover;
+           WHY: 150% can crop the image excessively on a narrow phone.
+           cover makes the background fill the section. */
+        background-size: cover;
+    }
+
+
+    .center {
+
+        /* ORIGINAL: width: 80%;
+           CHANGED TO: width: 90%;
+           WHY: Gives content more horizontal space on mobile. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: 5% + 90% + 5% fills the screen neatly. */
+        margin-left: 5%;
+    }
+
+
+    .head1 {
+
+        /* ORIGINAL: padding-top: 20%;
+           CHANGED TO: padding-top: 10%;
+           WHY: Reduces unnecessary empty space above the heading. */
+        padding-top: 10%;
+
+        /* ORIGINAL: larger desktop text
+           CHANGED TO: font-size: 12px;
+           WHY: Small heading text is more suitable for mobile. */
+        font-size: 12px;
+    }
+
+
+    .head2 {
+
+        /* ORIGINAL: font-size: 100px;
+           CHANGED TO: font-size: 55px;
+           WHY: 100px is too large for a phone and may overflow. */
+        font-size: 55px;
+
+        /* NEW: line-height: .95;
+           WHY: Reduces the vertical space between wrapped heading lines. */
+        line-height: .95;
+    }
+
+
+    .description-box {
+
+        /* NEW: max-width: 100%;
+           WHY: Prevents the description box from becoming wider
+           than the mobile container. */
+        max-width: 100%;
+    }
+
+
+    .description {
+
+        /* ORIGINAL: font-size: 25px;
+           CHANGED TO: font-size: 17px;
+           WHY: Smaller readable text is better for a phone. */
+        font-size: 17px;
+
+        /* NEW: line-height: 1.5;
+           WHY: Gives wrapped text enough vertical spacing
+           to remain readable. */
+        line-height: 1.5;
+    }
+
+
+    /* =====================================================
+       HERO BUTTONS
+       ===================================================== */
+
+    .main-buttons {
+
+        /* ORIGINAL: larger desktop spacing
+           CHANGED TO: padding-top: 30px;
+           WHY: Reduces vertical space above the buttons. */
+        padding-top: 30px;
+
+        /* ORIGINAL: gap was larger
+           CHANGED TO: gap: 10px;
+           WHY: Keeps buttons closer together on mobile. */
+        gap: 10px;
+    }
+
+
+    .order-btn {
+
+        /* ORIGINAL: padding: 20px 40px;
+           CHANGED TO: padding: 15px 25px;
+           WHY: Makes the button smaller while keeping it easy to tap. */
+        padding: 15px 25px;
+    }
+
+
+    .button-line {
+
+        /* ORIGINAL: visible
+           CHANGED TO: display: none;
+           WHY: Decorative separator takes unnecessary horizontal space
+           on a small screen. */
+        display: none;
+    }
+
+
+    .store-btn {
+
+        /* ORIGINAL: larger padding
+           CHANGED TO: padding: 8px 10px;
+           WHY: Makes app-store buttons fit better on mobile. */
+        padding: 8px 10px;
+    }
+
+
+    .store-btn img {
+
+        /* ORIGINAL: larger store icon
+           CHANGED TO: height: 25px;
+           WHY: Reduces icon size for the smaller button. */
+        height: 25px;
+
+        /* ORIGINAL: larger store icon
+           CHANGED TO: width: 25px;
+           WHY: Keeps the icon square. */
+        width: 25px;
+    }
+
+
+    /* =====================================================
+       DELIVERY TIME BOX
+       ===================================================== */
+
+    .time {
+
+        /* ORIGINAL: width: 96%;
+           CHANGED TO: width: 100%;
+           WHY: Uses the full available mobile container width. */
+        width: 100%;
+
+        /* ORIGINAL: height: 15vh;
+           CHANGED TO: height: 100px;
+           WHY: A fixed height gives this small component
+           predictable sizing on phones. */
+        height: 100px;
+
+        /* ORIGINAL: margin-top: 6%;
+           CHANGED TO: margin-top: 10%;
+           WHY: Adds enough separation after the buttons. */
+        margin-top: 10%;
+    }
+
+
+    .sec {
+
+        /* ORIGINAL: larger padding
+           CHANGED TO: padding: 10px;
+           WHY: Reduces internal spacing so content fits. */
+        padding: 10px;
+    }
+
+
+    .sec p {
+
+        /* ORIGINAL: larger text
+           CHANGED TO: font-size: 25px;
+           WHY: Keeps the main number readable without being too large. */
+        font-size: 25px;
+    }
+
+
+    .sec span {
+
+        /* ORIGINAL: larger text
+           CHANGED TO: font-size: 15px;
+           WHY: Supporting text needs to be smaller. */
+        font-size: 15px;
+    }
+
+
+    /* =====================================================
+       MARQUEE
+       ===================================================== */
+
+    marquee {
+
+        /* ORIGINAL: larger height
+           CHANGED TO: height: 10vh;
+           WHY: Gives the category strip a reasonable mobile height. */
+        height: 10vh;
+
+        /* NEW: font-size: 20px;
+           WHY: Makes the category text fit better on mobile. */
+        font-size: 20px;
+    }
+
+
+    /* =====================================================
+       HOW WE BUILD IT
+       ===================================================== */
+
+    .build-heading {
+
+        /* ORIGINAL: fixed/large width
+           CHANGED TO: width: 90%;
+           WHY: Keeps the heading inside mobile screen boundaries. */
+        width: 90%;
+
+        /* ORIGINAL: large/fixed height
+           CHANGED TO: height: auto;
+           WHY: Text can wrap on mobile, so the section must be
+           allowed to grow vertically. */
+        height: auto;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the 90% wide section. */
+        margin-left: 5%;
+
+        /* NEW: padding: 70px 0;
+           WHY: Gives the heading vertical breathing room. */
+        padding: 70px 0;
+
+        /* ORIGINAL: flex layout
+           CHANGED TO: display: block;
+           WHY: Stacks the heading and description vertically
+           instead of trying to keep them side-by-side. */
+        display: block;
+    }
+
+
+    .build-heading > div:first-child {
+
+        /* ORIGINAL: padding-top: 20%;
+           CHANGED TO: padding-top: 0;
+           WHY: Removes excessive top spacing after changing
+           the section to a mobile layout. */
+        padding-top: 0;
+    }
+
+
+    .build-heading > div:first-child p {
+
+        /* ORIGINAL: large desktop heading
+           CHANGED TO: font-size: 40px;
+           WHY: Makes the heading fit comfortably on mobile. */
+        font-size: 40px;
+
+        /* NEW: width: auto;
+           WHY: Allows the heading to use the available mobile width. */
+        width: auto;
+    }
+
+
+    .build-description {
+
+        /* ORIGINAL: narrower width
+           CHANGED TO: width: 100%;
+           WHY: Allows the description to use the complete
+           mobile container width. */
+        width: 100%;
+
+        /* ORIGINAL: larger top spacing
+           CHANGED TO: padding-top: 30px;
+           WHY: Adds controlled spacing below the heading. */
+        padding-top: 30px;
+
+        /* ORIGINAL: larger desktop text
+           CHANGED TO: font-size: 17px;
+           WHY: Better mobile readability. */
+        font-size: 17px;
+    }
+
+
+    /* =====================================================
+       CARDS
+       ===================================================== */
+
+    .cards {
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Uses more screen width. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the cards. */
+        margin-left: 5%;
+
+        /* ORIGINAL: margin-right: 12%;
+           CHANGED TO: margin-right: 5%;
+           WHY: Keeps equal side spacing. */
+        margin-right: 5%;
+
+        /* ORIGINAL: fixed/large height
+           CHANGED TO: height: auto;
+           WHY: Cards may need different heights when text wraps. */
+        height: auto;
+
+        /* ORIGINAL: display: flex;
+           CHANGED TO: display: grid;
+           WHY: Grid makes stacking cards on mobile easier. */
+        display: grid;
+
+        /* NEW: grid-template-columns: 1fr;
+           WHY: One card per row gives each card enough width. */
+        grid-template-columns: 1fr;
+
+        /* NEW: gap: 20px;
+           WHY: Adds consistent space between cards. */
+        gap: 20px;
+
+        /* NEW: padding-top: 20px;
+           WHY: Adds space above the card list. */
+        padding-top: 20px;
+
+        /* NEW: padding-bottom: 50px;
+           WHY: Adds space after the final card. */
+        padding-bottom: 50px;
+    }
+
+
+    .card {
+
+        /* ORIGINAL: width: 20%;
+           CHANGED TO: width: 100%;
+           WHY: Each card should occupy the full mobile container
+           instead of trying to fit five cards in one row. */
+        width: 100%;
+
+        /* ORIGINAL: fixed height
+           CHANGED TO: height: auto;
+           WHY: Text wrapping can make a card taller. */
+        height: auto;
+
+        /* NEW: min-height: 250px;
+           WHY: Prevents cards from becoming too short. */
+        min-height: 250px;
+    }
+
+
+    .card-description {
+
+        /* ORIGINAL: limited desktop width
+           CHANGED TO: max-width: 100%;
+           WHY: Allows description text to use mobile width. */
+        max-width: 100%;
+
+        /* NEW: padding-right: 30px;
+           WHY: Prevents text from touching the card edge. */
+        padding-right: 30px;
+
+        /* NEW: padding-bottom: 30px;
+           WHY: Adds space below the card description. */
+        padding-bottom: 30px;
+    }
+
+
+    /* =====================================================
+       STORY
+       ===================================================== */
+
+    .story {
+
+        /* ORIGINAL: fixed height
+           CHANGED TO: height: auto;
+           WHY: Image and text stack on mobile and need variable height. */
+        height: auto;
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Gives the section more mobile width. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the section. */
+        margin-left: 5%;
+
+        /* ORIGINAL: display: flex;
+           CHANGED TO: display: block;
+           WHY: Image and text should stack vertically on mobile. */
+        display: block;
+    }
+
+
+    .story-image {
+
+        /* ORIGINAL: desktop height
+           CHANGED TO: height: 500px;
+           WHY: Gives the story image a reasonable mobile height. */
+        height: 500px;
+
+        /* ORIGINAL: partial width
+           CHANGED TO: width: 100%;
+           WHY: Makes the image fill the mobile container. */
+        width: 100%;
+    }
+
+
+    .story-content {
+
+        /* ORIGINAL: larger desktop spacing
+           CHANGED TO: padding-top: 40px;
+           WHY: Adds controlled spacing between image and text. */
+        padding-top: 40px;
+    }
+
+
+    .story-heading {
+
+        /* ORIGINAL: large heading
+           CHANGED TO: font-size: 40px;
+           WHY: Prevents the story heading from overflowing. */
+        font-size: 40px;
+    }
+
+
+    .story-text {
+
+        /* ORIGINAL: limited max-width
+           CHANGED TO: max-width: 100%;
+           WHY: Allows the paragraph to use the available mobile width. */
+        max-width: 100%;
+
+        /* ORIGINAL: larger text
+           CHANGED TO: font-size: 17px;
+           WHY: Better mobile readability. */
+        font-size: 17px;
+    }
+
+
+    .story-text-2 {
+
+        /* ORIGINAL: limited desktop width
+           CHANGED TO: max-width: 100%;
+           WHY: Allows the second paragraph to fit mobile width. */
+        max-width: 100%;
+    }
+
+
+    .story-stats {
+
+        /* ORIGINAL: large gap
+           CHANGED TO: column-gap: 30px;
+           WHY: Reduces space between statistics. */
+        column-gap: 30px;
+    }
+
+
+    .story-stats p {
+
+        /* ORIGINAL: large desktop number
+           CHANGED TO: font-size: 35px;
+           WHY: Large numbers need to shrink on mobile. */
+        font-size: 35px;
+    }
+
+
+    /* =====================================================
+       ENJOY FOOD
+       ===================================================== */
+
+    .enjoy {
+
+        /* ORIGINAL: large fixed height
+           CHANGED TO: height: 60vh;
+           WHY: Makes the section responsive to screen height. */
+        height: 60vh;
+
+        /* ORIGINAL: large margin-top
+           CHANGED TO: margin-top: 15vh;
+           WHY: Uses viewport-relative spacing on mobile. */
+        margin-top: 15vh;
+
+        /* ORIGINAL: large padding
+           CHANGED TO: padding-top: 80px;
+           WHY: Reduces top spacing for mobile. */
+        padding-top: 80px;
+
+        /* ORIGINAL: large background size
+           CHANGED TO: background-size: cover;
+           WHY: Makes the background fill the mobile section. */
+        background-size: cover;
+    }
+
+
+    .enjoy > p {
+
+        /* ORIGINAL: font-size: 100px;
+           CHANGED TO: font-size: 45px;
+           WHY: Prevents the large heading from overflowing mobile width. */
+        font-size: 45px;
+    }
+
+
+    .enjoy > p:nth-child(3) {
+
+        /* ORIGINAL: font-size: 100px;
+           CHANGED TO: font-size: 45px;
+           WHY: Keeps both large lines at the same mobile size. */
+        font-size: 45px;
+    }
+
+
+    .enjoy-description {
+
+        /* ORIGINAL: large max-width
+           CHANGED TO: max-width: 90%;
+           WHY: Keeps description inside the mobile screen. */
+        max-width: 90%;
+
+        /* ORIGINAL: margin-left: 30vw;
+           CHANGED TO: margin-left: 5%;
+           WHY: 30vw would push the text too far to the right. */
+        margin-left: 5%;
+
+        /* NEW: font-size: 17px !important;
+           WHY: Makes the description readable on mobile.
+           !important is used because another selector may already
+           have higher specificity. */
+        font-size: 17px !important;
+    }
+
+
+    /* =====================================================
+       HOW IT WORKS
+       ===================================================== */
+
+    .how-it-works {
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the mobile section. */
+        margin-left: 5%;
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Gives the section more mobile width. */
+        width: 90%;
+
+        /* ORIGINAL: min-height: 200vh;
+           CHANGED TO: min-height: auto;
+           WHY: A 200vh minimum creates unnecessary empty space
+           on a phone. */
+        min-height: auto;
+
+        /* ORIGINAL: display: flex;
+           CHANGED TO: display: block;
+           WHY: Stacks the left and right parts vertically. */
+        display: block;
+    }
+
+
+    .how-it-works .left {
+
+        /* ORIGINAL: width: 50%;
+           CHANGED TO: width: 100%;
+           WHY: The left content should use the full mobile width. */
+        width: 100%;
+
+        /* ORIGINAL: height: 100vh;
+           CHANGED TO: height: auto;
+           WHY: Prevents unnecessary fixed-height space. */
+        height: auto;
+
+        /* ORIGINAL: padding-top: 15%;
+           CHANGED TO: padding-top: 80px;
+           WHY: Gives controlled spacing at the beginning. */
+        padding-top: 80px;
+
+        /* ORIGINAL: position: sticky;
+           CHANGED TO: position: static;
+           WHY: Sticky desktop behavior isn't useful when the
+           two columns become one column. */
+        position: static;
+    }
+
+
+    .how-heading {
+
+        /* ORIGINAL: large desktop heading
+           CHANGED TO: font-size: 45px;
+           WHY: Makes the heading fit mobile width. */
+        font-size: 45px;
+    }
+
+
+    .how-description {
+
+        /* ORIGINAL: limited width
+           CHANGED TO: max-width: 100%;
+           WHY: Uses the available mobile width. */
+        max-width: 100%;
+
+        /* ORIGINAL: larger text
+           CHANGED TO: font-size: 17px;
+           WHY: Improves readability on mobile. */
+        font-size: 17px;
+    }
+
+
+    .how-it-works .right {
+
+        /* ORIGINAL: width: 50%;
+           CHANGED TO: width: 100%;
+           WHY: The right side needs the full mobile width. */
+        width: 100%;
+
+        /* ORIGINAL: min-height: 200vh;
+           CHANGED TO: min-height: auto;
+           WHY: Prevents unnecessary huge vertical space. */
+        min-height: auto;
+
+        /* ORIGINAL: padding-left: 30px;
+           CHANGED TO: padding-left: 0;
+           WHY: Removes desktop indentation. */
+        padding-left: 0;
+
+        /* NEW: margin-top: 80px;
+           WHY: Adds space between the heading section and steps. */
+        margin-top: 80px;
+    }
+
+
+    .steps {
+
+        /* ORIGINAL: large desktop margin
+           CHANGED TO: margin-top: 0;
+           WHY: Removes unnecessary spacing after the mobile layout change. */
+        margin-top: 0;
+    }
+
+
+    .steps-content {
+
+        /* ORIGINAL: desktop spacing
+           CHANGED TO: margin-top: 0;
+           WHY: Prevents excessive gaps on mobile. */
+        margin-top: 0;
+    }
+
+
+    /* =====================================================
+       APP SECTION
+       ===================================================== */
+
+    .app-section {
+
+        /* ORIGINAL: large fixed height
+           CHANGED TO: height: auto;
+           WHY: Mobile content may wrap and require more height. */
+        height: auto;
+
+        /* NEW: min-height: 100vh;
+           WHY: Keeps the app section visually substantial. */
+        min-height: 100vh;
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Gives the section more mobile width. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the section. */
+        margin-left: 5%;
+
+        /* ORIGINAL: display: flex;
+           CHANGED TO: display: block;
+           WHY: Stacks the app text and images vertically. */
+        display: block;
+    }
+
+
+    .app-content {
+
+        /* ORIGINAL: width: 50%;
+           CHANGED TO: width: 100%;
+           WHY: Text should use the full mobile width. */
+        width: 100%;
+
+        /* ORIGINAL: fixed height
+           CHANGED TO: height: auto;
+           WHY: Wrapped text needs flexible height. */
+        height: auto;
+
+        /* ORIGINAL: desktop padding
+           CHANGED TO: padding: 50px 25px;
+           WHY: Provides suitable mobile spacing. */
+        padding: 50px 25px;
+    }
+
+
+    .app-heading {
+
+        /* ORIGINAL: large heading
+           CHANGED TO: font-size: 40px;
+           WHY: Makes the heading fit the phone width. */
+        font-size: 40px;
+    }
+
+
+    .app-description {
+
+        /* ORIGINAL: limited desktop width
+           CHANGED TO: max-width: 100%;
+           WHY: Allows the description to use the mobile container. */
+        max-width: 100%;
+
+        /* ORIGINAL: larger text
+           CHANGED TO: font-size: 17px;
+           WHY: Improves mobile readability. */
+        font-size: 17px;
+    }
+
+
+    .app-store-buttons {
+
+        /* NEW: flex-wrap: wrap;
+           WHY: If both buttons don't fit in one row,
+           they can move to the next line instead of overflowing. */
+        flex-wrap: wrap;
+    }
+
+
+    .app-images {
+
+        /* ORIGINAL: desktop width
+           CHANGED TO: width: 100%;
+           WHY: Image area should use the full mobile width. */
+        width: 100%;
+
+        /* ORIGINAL: large desktop height
+           CHANGED TO: height: 500px;
+           WHY: Gives the image area a controlled mobile height. */
+        height: 500px;
+    }
+
+
+    .mobile-app {
+
+        /* ORIGINAL: larger width
+           CHANGED TO: width: 55%;
+           WHY: Reduces the phone image size so it fits
+           inside the mobile screen. */
+        width: 55%;
+
+        /* ORIGINAL: larger height
+           CHANGED TO: height: 85%;
+           WHY: Keeps the image proportional within its container. */
+        height: 85%;
+    }
+
+
+    .side-interface {
+
+        /* ORIGINAL: larger width
+           CHANGED TO: width: 25%;
+           WHY: Makes the secondary interface image smaller. */
+        width: 25%;
+
+        /* ORIGINAL: larger height
+           CHANGED TO: height: 20%;
+           WHY: Keeps it from taking too much space. */
+        height: 20%;
+
+        /* ORIGINAL: larger top spacing
+           CHANGED TO: margin-top: 200px;
+           WHY: Positions the secondary image lower beside the phone. */
+        margin-top: 200px;
+
+        /* ORIGINAL: larger right spacing
+           CHANGED TO: margin-right: 150px;
+           WHY: Adjusts its position for the smaller screen. */
+        margin-right: 150px;
+    }
+
+
+    /* =====================================================
+       INSTAGRAM
+       ===================================================== */
+
+    .instagram {
+
+        /* ORIGINAL: fixed height
+           CHANGED TO: height: auto;
+           WHY: Image grid height should grow according to its content. */
+        height: auto;
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Uses more mobile screen width. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the section. */
+        margin-left: 5%;
+
+        /* NEW: padding-top: 100px;
+           WHY: Adds space before the Instagram section. */
+        padding-top: 100px;
+
+        /* NEW: padding-bottom: 100px;
+           WHY: Adds space after the Instagram images. */
+        padding-bottom: 100px;
+    }
+
+
+    .instagram-heading {
+
+        /* ORIGINAL: flex layout
+           CHANGED TO: display: block;
+           WHY: Stacks Instagram heading and button vertically. */
+        display: block;
+    }
+
+
+    .instagram-title {
+
+        /* ORIGINAL: background color
+           CHANGED TO: transparent;
+           WHY: Removes the desktop background treatment
+           when the heading becomes a mobile layout. */
+        background-color: transparent;
+    }
+
+
+    .instagram-title small {
+
+        /* ORIGINAL: margin-right: larger value
+           CHANGED TO: margin-right: 0;
+           WHY: Removes unnecessary horizontal spacing. */
+        margin-right: 0;
+
+        /* ORIGINAL: background color
+           CHANGED TO: transparent;
+           WHY: Keeps the mobile heading cleaner. */
+        background-color: transparent;
+    }
+
+
+    .instagram-title p {
+
+        /* ORIGINAL: large heading
+           CHANGED TO: font-size: 40px;
+           WHY: Makes the Instagram heading fit mobile width. */
+        font-size: 40px;
+    }
+
+
+    .instagram-heading > a {
+
+        /* NEW: margin-top: 30px;
+           WHY: Separates the Follow button from the heading. */
+        margin-top: 30px;
+
+        /* NEW: display: inline-flex;
+           WHY: Keeps the button sized according to its content. */
+        display: inline-flex;
+    }
+
+
+    .instagram-images {
+
+        /* ORIGINAL: fixed/large height
+           CHANGED TO: height: auto;
+           WHY: Grid height should be determined by its images. */
+        height: auto;
+
+        /* ORIGINAL: 3 columns
+           CHANGED TO: 2 columns;
+           WHY: Two columns gives each image more width on mobile. */
+        grid-template-columns: 1fr 1fr;
+
+        /* ORIGINAL: larger gap
+           CHANGED TO: gap: 10px;
+           WHY: Reduces gaps so images have more room. */
+        gap: 10px;
+
+        /* ORIGINAL: background
+           CHANGED TO: transparent;
+           WHY: Removes unnecessary background around the grid. */
+        background-color: transparent;
+    }
+
+
+    .instagram-images img {
+
+        /* ORIGINAL: desktop height
+           CHANGED TO: height: 180px;
+           WHY: Gives images a reasonable mobile height. */
+        height: 180px;
+
+        /* ORIGINAL: width: 30%;
+           CHANGED TO: width: 100%;
+           WHY: Each image should fill its grid cell. */
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       HUNGRY YET
+       ===================================================== */
+
+    .hungry-section {
+
+        /* ORIGINAL: fixed height
+           CHANGED TO: height: auto;
+           WHY: Content can wrap on mobile and needs flexible height. */
+        height: auto;
+
+        /* NEW: min-height: 60vh;
+           WHY: Keeps the CTA section visually large enough. */
+        min-height: 60vh;
+
+        /* ORIGINAL: width: 75%;
+           CHANGED TO: width: 90%;
+           WHY: Uses more mobile width. */
+        width: 90%;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin-left: 5%;
+           WHY: Centers the section. */
+        margin-left: 5%;
+
+        /* NEW: padding: 80px 20px;
+           WHY: Adds comfortable spacing around the CTA content. */
+        padding: 80px 20px;
+
+        /* ORIGINAL: large background size
+           CHANGED TO: background-size: cover;
+           WHY: Makes the background fill the mobile section. */
+        background-size: cover;
+    }
+
+
+    .hungry-heading {
+
+        /* ORIGINAL: large desktop heading
+           CHANGED TO: font-size: 45px;
+           WHY: Makes the heading fit mobile width. */
+        font-size: 45px;
+    }
+
+
+    .hungry-gradient {
+
+        /* ORIGINAL: large desktop text
+           CHANGED TO: font-size: 45px;
+           WHY: Keeps the gradient heading responsive. */
+        font-size: 45px;
+    }
+
+
+    .hungry-description {
+
+        /* ORIGINAL: larger desktop text
+           CHANGED TO: font-size: 16px;
+           WHY: Makes the paragraph easier to fit and read. */
+        font-size: 16px;
+    }
+
+
+    .hungry-buttons {
+
+        /* NEW: flex-wrap: wrap;
+           WHY: Allows buttons to move to another line
+           instead of overflowing the phone. */
+        flex-wrap: wrap;
+
+        /* NEW: gap: 15px;
+           WHY: Adds consistent spacing between wrapped buttons. */
+        gap: 15px;
+    }
+
+
+    .hungry-buttons a:first-child,
+    .hungry-buttons a:last-child {
+
+        /* ORIGINAL: larger button padding
+           CHANGED TO: padding: 15px 25px;
+           WHY: Makes CTA buttons fit better on mobile. */
+        padding: 15px 25px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    .footer {
+
+        /* ORIGINAL: fixed/large height
+           CHANGED TO: height: auto;
+           WHY: Footer content will wrap and therefore needs
+           flexible height. */
+        height: auto;
+
+        /* ORIGINAL: large margin
+           CHANGED TO: margin-top: 10vh;
+           WHY: Uses viewport-relative spacing. */
+        margin-top: 10vh;
+
+        /* ORIGINAL: padding: 100px 12%;
+           CHANGED TO: padding: 60px 8%;
+           WHY: Reduces desktop spacing on mobile. */
+        padding: 60px 8%;
+
+        /* ORIGINAL: flex
+           CHANGED TO: display: grid;
+           WHY: Grid makes it easier to organize footer content
+           on a small screen. */
+        display: grid;
+
+        /* NEW: grid-template-columns: 1fr 1fr;
+           WHY: Creates two flexible columns for footer items. */
+        grid-template-columns: 1fr 1fr;
+
+        /* NEW: gap: 40px;
+           WHY: Adds spacing between footer items. */
+        gap: 40px;
+    }
+
+
+    .footer-about {
+
+        /* ORIGINAL: limited width
+           CHANGED TO: width: 100%;
+           WHY: Allows the About section to use the available width. */
+        width: 100%;
+
+        /* NEW: grid-column: 1 / 3;
+           WHY: Makes About span both mobile footer columns. */
+        grid-column: 1 / 3;
+    }
+
+
+    .footer-big-text {
+
+        /* ORIGINAL: font-size: 150px;
+           CHANGED TO: font-size: 45px;
+           WHY: 150px is far too large for a phone and can overflow. */
+        font-size: 45px;
+
+        /* ORIGINAL: large/desktop height
+           CHANGED TO: height: 15vh;
+           WHY: Makes the large footer text section responsive. */
+        height: 15vh;
+
+        /* ORIGINAL: margin-left: 12%;
+           CHANGED TO: margin: 0;
+           WHY: Removes desktop positioning that isn't needed on mobile. */
+        margin: 0;
+
+        /* ORIGINAL: width based on desktop layout
+           CHANGED TO: width: 100%;
+           WHY: Allows the text to use the full mobile width. */
+        width: 100%;
+
+        /* NEW: justify-content: center;
+           WHY: Centers the large footer text. */
+        justify-content: center;
+    }
+
+
+    .copyright {
+
+        /* ORIGINAL: desktop height
+           CHANGED TO: height: 10vh;
+           WHY: Gives the copyright area responsive height. */
+        height: 10vh;
+    }
+}
